@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var shope = ["Nike背包","Adidas运动衫","李宁运动鞋","Kappa外套","361腰包"];
+			document.write("本次打折商品有："+" <br/>");
+			for (var i = 0;i<shope.length;i++) {
+				document.write(shope[i]+"<br />");
+			};
+			
+				var shope = ["Adidas运动衫","李宁运动鞋","Kappa外套","361腰包","Adidas运动裤"];
+			document.write("本次打折商品有："+" <br/>");
+			for (var i = 0;i<shope.length;i++) {
+				document.write(shope[i]+"<br />");
+			};
+				var shope = ["Adidas运动衫","李宁运动鞋","Kappa外套","361腰包","Adidas运动裤"];
+				console.log(shope.splice(1,1,"特步运动鞋"));
+		 	document.write("本次打折商品有："+" <br/>");
+			for (var i = 0;i<shope.length;i++) {
+				document.write(shope[i]+"<br />");
+			};
+			var shope = ["Adidas运动衫","李宁运动鞋","Kappa外套","361腰包","Adidas运动裤"];
+				console.log(shope.join("、"));
+		 	document.write("本次打折商品有："+" <br/>");
+		 	document.write(shope);
+		</script>
+	</body>
+</html>

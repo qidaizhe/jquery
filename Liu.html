@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var y = 90;
+			var g = 84;
+			var m = 78;
+			function getSun(){
+				var A= y+g+m;
+				alert(A);
+			}
+			getSun();
+			
+		function getMin(){
+			var getMin = arguments[0];
+			for (var i =0;i<arguments.length;i++) {
+				if(getMin>arguments[i]){
+					getMin=arguments[i];
+				}
+			}
+			alert(getMin);
+		}
+		getMin(20,34,-3,15,99,45,77);
+		
+		var num =0;
+		function add(){
+		 for (var i =0;i<=4;i++) {
+		 	num++;
+		 }if(num==5){
+		 	return num;
+		 }
+		}var showNum = add();
+		alert(showNum);
+		</script>
+	</body>
+</html>

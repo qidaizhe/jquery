@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>父窗口</h2>
+		<button onclick="open_win()">打开窗口</button>
+		<button onclick="close_win()">关闭窗口</button>
+		<script>
+			function open_win(){
+				newWin = window.open("er.html","new","height=400,width=400,top=0,left=0");
+				
+			}
+			function close_win(){
+				if(window.opener&&!opener.closed){
+					opener.close();
+				}
+			}
+		</script>
+	</body>
+</html>
